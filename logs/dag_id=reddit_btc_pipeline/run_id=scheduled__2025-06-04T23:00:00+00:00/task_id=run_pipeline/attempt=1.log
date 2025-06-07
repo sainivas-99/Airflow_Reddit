@@ -1,0 +1,18 @@
+{"timestamp":"2025-06-04T23:00:06.379684","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-04T23:00:06.380108","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/reddit_btc_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-04T23:00:06.405065Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-04T23:00:06.405255Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-04T23:00:06.405360Z","level":"info","event":"Current task name:run_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-04T23:00:06.405451Z","level":"info","event":"Dag name:reddit_btc_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-04T23:00:06.389976","level":"info","event":"Tmp dir root location: /tmp","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-06-04T23:00:06.390716","level":"info","event":"Running command: ['/usr/bin/bash', '-c', 'cd /opt/airflow/user_pipeline && python scripts/daily_pipeline.py']","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-06-04T23:00:06.398216","level":"info","event":"Output:","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-06-04T23:00:07.635619","level":"info","event":"[nltk_data] Downloading package vader_lexicon to","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-06-04T23:00:07.635772","level":"info","event":"[nltk_data]     /home/airflow/nltk_data...","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-06-04T23:00:07.636273","level":"info","event":"[nltk_data]   Package vader_lexicon is already up-to-date!","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-06-04T23:00:08.103402","level":"info","event":"\rReddit posts: 0it [00:00, ?it/s]\rReddit posts: 1it [00:00,  2.18it/s]\rReddit posts: 6it [00:00, 13.10it/s]","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-06-04T23:00:08.237230","level":"info","event":"Command exited with return code 0","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-06-04T23:00:08.237985","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('01973d2c-4440-7d7c-a2c3-95f71d625ccd'), task_id='run_pipeline', dag_id='reddit_btc_pipeline', run_id='scheduled__2025-06-04T23:00:00+00:00', try_number=1, map_index=-1, hostname='af9171c4f77e', context_carrier={}, task=<Task(BashOperator): run_pipeline>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2025, 6, 4, 23, 0, 6, 133157, tzinfo=TzInfo(UTC)), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task"}
+{"timestamp":"2025-06-04T23:00:08.258636Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-04T23:00:08.258898Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-04T23:00:08.258990Z","level":"info","event":"Task operator:<Task(BashOperator): run_pipeline>","chan":"stdout","logger":"task"}

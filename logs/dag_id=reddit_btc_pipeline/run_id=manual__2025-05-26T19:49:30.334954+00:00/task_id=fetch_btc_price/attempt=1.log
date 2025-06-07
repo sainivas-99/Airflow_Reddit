@@ -1,0 +1,14 @@
+{"timestamp":"2025-05-26T19:49:31.822495","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-26T19:49:31.822885","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/reddit_btc_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-26T19:49:31.831979","level":"info","event":"Tmp dir root location: /tmp","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-26T19:49:32.222827Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T19:49:32.223106Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T19:49:32.223199Z","level":"info","event":"Current task name:fetch_btc_price","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T19:49:32.223268Z","level":"info","event":"Dag name:reddit_btc_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T19:49:31.832938","level":"info","event":"Running command: ['/usr/bin/bash', '-c', 'cd /opt/airflow/user_pipeline && python scripts/fetch_BTC_price.py']","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-26T19:49:31.838955","level":"info","event":"Output:","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-26T19:49:32.682287","level":"info","event":"Command exited with return code 0","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-26T19:49:32.683172","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('01970e24-9e6e-7838-a34a-fc7995f1e8c5'), task_id='fetch_btc_price', dag_id='reddit_btc_pipeline', run_id='manual__2025-05-26T19:49:30.334954+00:00', try_number=1, map_index=-1, hostname='c08227606143', context_carrier={}, task=<Task(BashOperator): fetch_btc_price>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2025, 5, 26, 19, 49, 31, 439660, tzinfo=TzInfo(UTC)), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task"}
+{"timestamp":"2025-05-26T19:49:32.708047Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T19:49:32.708225Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T19:49:32.708333Z","level":"info","event":"Task operator:<Task(BashOperator): fetch_btc_price>","chan":"stdout","logger":"task"}

@@ -1,0 +1,16 @@
+{"timestamp":"2025-06-04T23:00:01.156144","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-04T23:00:01.156550","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/reddit_btc_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-04T23:00:01.182306Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-04T23:00:01.182646Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-04T23:00:01.182835Z","level":"info","event":"Current task name:check_new_reddit_posts","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-04T23:00:01.182930Z","level":"info","event":"Dag name:reddit_btc_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-04T23:00:03.717392Z","level":"info","event":"STDOUT: True","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-04T23:00:03.718944Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-04T23:00:03.719910Z","level":"info","event":"STDERR:","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-04T23:00:03.718659","level":"info","event":"Done. Returned value was: True","logger":"airflow.task.operators.airflow.providers.standard.operators.python.ShortCircuitOperator"}
+{"timestamp":"2025-06-04T23:00:03.718845","level":"info","event":"Condition result is True","logger":"airflow.task.operators.airflow.providers.standard.operators.python.ShortCircuitOperator"}
+{"timestamp":"2025-06-04T23:00:03.718895","level":"info","event":"Proceeding with downstream tasks...","logger":"airflow.task.operators.airflow.providers.standard.operators.python.ShortCircuitOperator"}
+{"timestamp":"2025-06-04T23:00:03.719285","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('01973d2c-443e-7dec-8c09-7827d08ae6ac'), task_id='check_new_reddit_posts', dag_id='reddit_btc_pipeline', run_id='scheduled__2025-06-04T23:00:00+00:00', try_number=1, map_index=-1, hostname='af9171c4f77e', context_carrier={}, task=<Task(ShortCircuitOperator): check_new_reddit_posts>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2025, 6, 4, 23, 0, 0, 812045, tzinfo=TzInfo(UTC)), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task"}
+{"timestamp":"2025-06-04T23:00:03.762401Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-04T23:00:03.762570Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-04T23:00:03.762679Z","level":"info","event":"Task operator:<Task(ShortCircuitOperator): check_new_reddit_posts>","chan":"stdout","logger":"task"}

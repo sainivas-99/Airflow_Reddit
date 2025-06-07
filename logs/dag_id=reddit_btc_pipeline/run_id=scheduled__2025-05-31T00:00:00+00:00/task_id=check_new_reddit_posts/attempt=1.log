@@ -1,0 +1,39 @@
+{"timestamp":"2025-05-31T00:00:00.626542","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-31T00:00:00.626875","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/reddit_btc_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-31T00:00:00.645115Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:00.645248Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:00.645350Z","level":"info","event":"Current task name:check_new_reddit_posts","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:00.645428Z","level":"info","event":"Dag name:reddit_btc_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.869076Z","level":"info","event":"STDOUT:","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.869274Z","level":"info","event":"STDERR: Traceback (most recent call last):","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.869405Z","level":"info","event":"  File \"/opt/airflow/user_pipeline/scripts/check_new_reddit_posts.py\", line 37, in <module>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.869490Z","level":"info","event":"    result = check_for_new_reddit_posts()","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.869570Z","level":"info","event":"             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.869644Z","level":"info","event":"  File \"/opt/airflow/user_pipeline/scripts/check_new_reddit_posts.py\", line 28, in check_for_new_reddit_posts","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.869718Z","level":"info","event":"    existing_df = pd.read_csv(master_file_path)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.869791Z","level":"info","event":"                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.869857Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 948, in read_csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.869933Z","level":"info","event":"    return _read(filepath_or_buffer, kwds)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.870003Z","level":"info","event":"           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.870066Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 611, in _read","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.870130Z","level":"info","event":"    parser = TextFileReader(filepath_or_buffer, **kwds)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.870198Z","level":"info","event":"             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.870276Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1448, in __init__","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.870342Z","level":"info","event":"    self._engine = self._make_engine(f, self.engine)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.870412Z","level":"info","event":"                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.870488Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1723, in _make_engine","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.870556Z","level":"info","event":"    return mapping[engine](f, **self.options)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.870624Z","level":"info","event":"           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.870735Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/c_parser_wrapper.py\", line 93, in __init__","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.870800Z","level":"info","event":"    self._reader = parsers.TextReader(src, **kwds)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.870869Z","level":"info","event":"                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.870933Z","level":"info","event":"  File \"parsers.pyx\", line 586, in pandas._libs.parsers.TextReader.__cinit__","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.870996Z","level":"info","event":"pandas.errors.EmptyDataError: No columns to parse from file","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.871059Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.871157Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.871218Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.871279Z","level":"info","event":"Task operator:<Task(ShortCircuitOperator): check_new_reddit_posts>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-31T00:00:02.869457","level":"info","event":"Done. Returned value was: False","logger":"airflow.task.operators.airflow.providers.standard.operators.python.ShortCircuitOperator"}
+{"timestamp":"2025-05-31T00:00:02.869530","level":"info","event":"Condition result is False","logger":"airflow.task.operators.airflow.providers.standard.operators.python.ShortCircuitOperator"}
+{"timestamp":"2025-05-31T00:00:02.869576","level":"info","event":"Skipping downstream tasks","logger":"airflow.task.operators.airflow.providers.standard.operators.python.ShortCircuitOperator"}
+{"timestamp":"2025-05-31T00:00:02.869853","level":"info","event":"Skipping downstream tasks.","logger":"task"}
